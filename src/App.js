@@ -46,7 +46,7 @@ const sellShare = async (userName, company, shares) => {
 function Item({ name, img, shareCount, basePps, pps: currentPps, sharesLeft, round, user, handleSubmit }) {
   const [sharesToBuy, setSharesToBuy] = useState(0)
   const handleShareChange = (event) => {
-    if (event.target.value > sharesLeft || event.target.value < 0) return
+    // if (event.target.value > sharesLeft || event.target.value < 0) return
     setSharesToBuy(event.target.value)
   }
   const [isDisabled, setIsDisabled] = useState(false)
