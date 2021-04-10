@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import "./App.css"
 
-const proxy = "http://localhost:5000"
+// const proxy = "http://localhost:5000"
+const proxy = "http://13.233.23.51:5000"
 
 const getCompanies = async () => {
   const response = await axios.get(proxy + "/get-companies")
